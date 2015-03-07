@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <title>ECSESS RoboElectronics</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+      <link href="/css/roboelectronics.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+      <div class="col-md-12">
+          <img class="img-responsive text-center" src="/pics/roboelectronics.jpg" alt="">
+      </div>
+        </div>
+      </div>
+    <div class="container">
+
+      <!--<div class="masthead">
+
+        <ul class="nav nav-justified">
+          <li class="active"><a href="#">Home</a></li>
+        </ul>
+      </div> -->
+
+
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-lg-12">
+            <h2>Downloads</h2>
+            <a href="/roboelectronics/FAQ.docx"><h3>FAQ.docx</h3></a>
+            <a href="/roboelectronics/ECSESS Robotics Club Lecture 1.pdf"><h3>ECSESS Robotics Club Lecture 1.pdf</h3></a>
+            <a href="/roboelectronics/ECSESS Robotics Club Lecture 2.pdf"><h3>ECSESS Robotics Club Lecture 2.pdf</h3></a>
+            <a href="/roboelectronics/ECSESSRoboticsClubLecture3.pdf"><h3>ECSESS Robotics Club Lecture 3.pdf</h3></a>
+            <a href="/roboelectronics/ECSESSRoboticsClubLecture4.pdf"><h3>ECSESS Robotics Club Lecture 4.pdf</h3></a>
+            <a href="/roboelectronics/ECSESS RCC Build Week1.pdf"><h3>ECSESS RCC Build Week1.pdf</h3></a>
+            <a href="/roboelectronics/ECSESS RCC Build Week2 new.pdf"><h3>ECSESS RCC Build Week2 new.pdf</h3></a>
+            <a href="/roboelectronics/ECSESSRCCBuildWeek3.pdf"><h3>ECSESS RCC Build Week3 new.pdf</h3></a>
+
+        </div>
+      </div>
+
+      <!-- Site footer -->
+      <div class="footer">
+        <p>&copy; ECSESS RoboElectronics 2014</p>
+      </div>
+
+    </div> <!-- /container -->
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="/js/jquery-2.1.1.min.js"></script>
+  </body>
+</html>
+
+
+<script>
+    function fileFetch(filename){
+      filepath=null;
+      $.ajax({
+        type: 'POST',
+        async: false,
+        url: "/roboelectronics/filename.php",
+        success: function(retData) {
+          $("body").append("<iframe src='" + retData.url+ "' style='display: none;' ></iframe>");
+          filepath=retData.url;
+        }
+      });
+    }
+</script>

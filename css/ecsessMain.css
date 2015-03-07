@@ -1,0 +1,420 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+  margin-bottom: 110px;
+
+}
+
+.subheader{
+  background-color: #00A600;
+  margin-bottom:20px;
+}
+
+.bottomSpace{
+  margin-bottom:20px;
+}
+
+.calendar-container {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}
+
+.calendar-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+h2{
+  color: #ffffff !important;
+}
+
+
+/*FOOTER*/
+footer {
+    color: #fff;
+    position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 110px;
+}
+
+footer h3 {
+    margin-bottom: 30px;
+}
+
+
+/*footer .footer-col {
+    margin-bottom: 50px;
+}*/
+
+footer .footer-reg {
+    padding: 25px 0;
+    background-color: #555555;
+}
+
+
+#wrap {
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        /* Negative indent footer by it's height */
+        margin: 0 auto -60px;
+      }
+#main {
+  overflow:auto;
+  padding-bottom:150px; /* this needs to be bigger than footer height*/
+}
+
+.space{
+  margin-bottom: 20px;
+}
+
+.img-center {
+	margin: 0 auto;
+}
+
+/*CUSTOM BUTTON STYLES*/
+
+/*main button*/
+.btn-main {
+  color: #ffffff;
+  background-color: #00A600;
+  border-color: #005C00;
+}
+
+.btn-main:hover,
+.btn-main:focus,
+.btn-main:active,
+.btn-main.active,
+.open .dropdown-toggle.btn-main {
+  color: #ffffff;
+  background-color: #006E00;
+  border-color: #005C00;
+}
+
+.btn-main:active,
+.btn-main.active,
+.open .dropdown-toggle.btn-main {
+  background-image: none;
+}
+
+.navbar-lower{
+ width: 600px;
+  background-color: #555555;
+  border: none;
+}
+
+.largeBar{
+  margin-top:180px;
+}
+
+.smallBar{
+  margin-top:140px;
+}
+
+.btn-main.disabled,
+.btn-main[disabled],
+fieldset[disabled] .btn-main,
+.btn-main.disabled:hover,
+.btn-main[disabled]:hover,
+fieldset[disabled] .btn-main:hover,
+.btn-main.disabled:focus,
+.btn-main[disabled]:focus,
+fieldset[disabled] .btn-main:focus,
+.btn-main.disabled:active,
+.btn-main[disabled]:active,
+fieldset[disabled] .btn-main:active,
+.btn-main.disabled.active,
+.btn-main[disabled].active,
+fieldset[disabled] .btn-main.active {
+  background-color: #00A600;
+  border-color: #005C00;
+}
+
+.btn-main .badge {
+  color: #00A600;
+  background-color: #ffffff;
+}
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.428571429;
+}
+
+.btn-circle.btn-lg {
+    width: 50px;
+    height: 50px;
+    padding: 10px 16px;
+    border-radius: 25px;
+    font-size: 18px;
+    line-height: 1.33;
+
+}
+
+.btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    border-radius: 35px;
+    font-size: 24px;
+    line-height: 1.33;
+}
+
+.center-block{
+  float:none;
+}
+
+/*CUSTOM PANEL*/
+
+.panel-default > .panel-heading {
+  color: #333;
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+
+}
+
+
+
+.imgHeader{
+  width: 100px;
+  margin-left: 80px;
+  margin-top:-4px;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+.navbar-inverse { background-color: #555555}
+.navbar-inverse .navbar-right>.active>a:hover,.navbar-inverse .navbar-right>li>a:hover, .navbar-inverse .navbar-right>li>a:focus { background-color: #00A600}
+.navbar-inverse .navbar-right>.active>a,.navbar-inverse .navbar-right>.open>a,.navbar-inverse .navbar-right>.open>a, .navbar-inverse .navbar-right>.open>a:hover,.navbar-inverse .navbar-right>.open>a, .navbar-inverse .navbar-right>.open>a:hover, .navbar-inverse .navbar-right>.open>a:focus { background-color: #00A600}
+.dropdown-menu { background-color: #555555}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-color: #00A600}
+.navbar-inverse { background-image: none; }
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-image: none; }
+.navbar-inverse { border-color: #555555}
+.navbar-inverse .navbar-brand { color: #FFFFFF}
+.navbar-inverse .navbar-brand:hover { color: #FFFFFF}
+.navbar-inverse .navbar-right>li>a { color: #FFFFFF}
+.navbar-inverse .navbar-right>li>a:hover, .navbar-inverse .navbar-right>li>a:focus { color: #FFFFFF}
+.navbar-inverse .navbar-right>.active>a,.navbar-inverse .navbar-right>.open>a, .navbar-inverse .navbar-right>.open>a:hover, .navbar-inverse .navbar-right>.open>a:focus { color: #FFFFFF}
+.navbar-inverse .navbar-right>.active>a:hover, .navbar-inverse .navbar-right>.active>a:focus { color: #FFFFFF}
+.dropdown-menu>li>a { color: #FFFFFF}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { color: #FFFFFF}
+.navbar-inverse .navbar-right>.dropdown>a .caret { border-top-color: #FFFFFF}
+.navbar-inverse .navbar-right>.dropdown>a:hover .caret { border-top-color: #FFFFFF}
+.navbar-inverse .navbar-right>.dropdown>a .caret { border-bottom-color: #FFFFFF}
+.navbar-inverse .navbar-right>.dropdown>a:hover .caret { border-bottom-color: #FFFFFF}
+
+.navbar-inverse {
+  min-height: 80px;
+}
+
+.dropdown-menu{
+min-width: 300px;
+}
+.list-inline{
+  background-color: #555555;
+
+  text-decoration: none;
+
+}
+.list-inline>li>a:hover, .dropdown-menu>li>a:focus { background-image: none; }
+.list-inline>li>a:hover, .dropdown-menu>li>a:focus { background-color: #00A600}
+.list-inline>li>a { color: #FFFFFF}
+.list-inline>li>a:hover, .dropdown-menu>li>a:focus { color: #FFFFFF}
+
+@media (min-width: 850px) {
+ /* ul.nav li.dropdown:hover > ul.dropdown-menu {
+      display: block;
+  }*/
+
+  .dropdown-toggle{
+    display:none;
+  }
+
+}
+
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+  /*background-color:#555555;*/
+  padding:1%;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+.carousel-background {
+  /*padding-bottom:10px;*/
+  border-radius: 15px;
+  padding-left: auto;
+  padding-right:auto;
+  padding top:10px;
+  background-color: rgba(85, 85, 85, .75);
+
+}
+
+.carousel-indicators{
+  margin-bottom:0px;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 850px) {
+
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+
+@media (max-width: 850px) {
+  .imgHeader{
+    width: 100px;
+    margin-left: 5px;
+    margin-top:-5px;
+  }
+
+  .navbar-toggle{
+    margin-top:16px;
+    width:50px;
+    height:50px;
+  }
+
+  .icon-bar{
+    width: 30px;
+    margin-left: 3px;
+  }
+  .navbar-lower{
+display:none;
+}
+
+
+}
+
