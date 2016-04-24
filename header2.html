@@ -11,18 +11,18 @@
     <title>Electrical, Computer, and Software Engineering Student Society</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="C:\Users\Eric\Documents\GitHub\ECSESS-Website/css/bootstrap.min.css" rel="stylesheet"  type="text/css">
 
     <!-- Custom styles for this template -->
-      <link href="/css/ecsessMain.css" rel="stylesheet">
-      <link href="/css/font-awesome.min.css" rel="stylesheet">
+      <link href="C:\Users\Eric\Documents\GitHub\ECSESS-Website/css/ecsessMain.css" rel="stylesheet"  type="text/css">
+      <link href="C:\Users\Eric\Documents\GitHub\ECSESS-Website/css/font-awesome.min.css" rel="stylesheet"  type="text/css">
      <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-      <script src="/js/jquery-2.1.1.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/jquery-scrollTo.js"></script>
-    <script src="/js/waypoints.min.js"></script>
+      <script  src="C:\Users\Eric\Documents\GitHub\ECSESS-Website/js/jquery-2.1.1.min.js"  ></script>
+    <script  src="C:\Users\Eric\Documents\GitHub\ECSESS-Website/js/bootstrap.min.js"  ></script>
+    <script  src="C:\Users\Eric\Documents\GitHub\ECSESS-Website/js/jquery-scrollTo.js"  ></script>
+    <script  src="C:\Users\Eric\Documents\GitHub\ECSESS-Website/js/waypoints.min.js"  ></script>
   </head>
 
   <body>
@@ -43,7 +43,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#"><img id="imgH" class="imgHeader" src="/pics/Ecsess-Logo-Test.svg"  alt="ECSESS"></a>
+              <a class="navbar-brand" href="#"><img id="imgH" class="imgHeader" src="C:\Users\Eric\Documents\GitHub\ECSESS-Website/pics/Ecsess-Logo-Test.svg"  alt="ECSESS"></a>
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav navbar-right top-nav">
@@ -70,7 +70,7 @@
                  <li id="lounge" data-menu="main" data-family="single"><a href="#" >The Lounge</a></li>
                 <li id="clubs" data-menu="main" data-family="single"><a href="#" >Clubs</a></li>
                   <li id="photos" data-menu="main" data-family="single"><a href="#" >Photos</a></li>
-                  <!--<li id="merch" data-menu="main" data-family="single"><a href="#" >Merchandise</a></li>-->
+                  <li id="merch" data-menu="main" data-family="single"><a href="#" >Merchandise</a></li>
               </ul>
             </div><!--End mobile menu-->
 
@@ -197,7 +197,7 @@
                     //set current tab as active
                     $(this).mainActive();
                     //load page content
-                    $( "#mainContent" ).load( filename );
+                    //$( "#mainContent" ).load( filename );
 
                     //trigger the mobile menu dropdown to close
                     $("button.navbar-toggle").click();
@@ -219,7 +219,7 @@
                     $(this).mainActive();
 
                     //load page content
-                    $( "#mainContent" ).load( filename );
+                    //$( "#mainContent" ).load( filename );
 
                 }
               }
@@ -276,7 +276,7 @@
                     //toggle logo size
                     $(this).toggleLogo();
                     //load page content
-                    $( "#mainContent" ).load( filename );
+                    //$( "#mainContent" ).load( filename );
                 }
                 else{
                     //ends up in here if clicked item has children
@@ -290,7 +290,7 @@
                     //set default child active (first item in the list)
                     $('.navbar-wrapper').find("[data-default='active']").childActive();//addClass('active'); //HERE
                     //load page content
-                    $( "#mainContent" ).load( filename );
+                    //$( "#mainContent" ).load( filename );
 
                     //generates the id of the child menu by adding the word Menu to the id of the main parent item.
                     //therefore the child menu must have an id of  idMenu where id is the id of the corresponding main parent item
@@ -349,90 +349,89 @@
       //MAIN LINKS
      $("#council").click(function(e) {
          e.preventDefault();
-       e.stopPropagation();
+	     e.stopPropagation();
          $("#council").navigate();
       });
       $("#events").click(function(e) {
          e.preventDefault();
-       e.stopPropagation();
+	     e.stopPropagation();
          $("#events").navigate();
       });
       $("#lounge").click(function(e) {
          e.preventDefault();
-       e.stopPropagation();
+	     e.stopPropagation();
          $("#lounge").navigate();
       });
       $("#clubs").click(function(e) {
          e.preventDefault();
-       e.stopPropagation();
+	     e.stopPropagation();
          $("#clubs").navigate();
       });
 
       $("#photos").click(function(e) {
          e.preventDefault();
-       e.stopPropagation();
+	     e.stopPropagation();
          $("#photos").navigate();
       });
 
-      /*$("#merch").click(function(e) {
+      $("#merch").click(function(e) {
          e.preventDefault();
-       e.stopPropagation();
+	     e.stopPropagation();
          $("#merch").navigate();
-      });*/
+      });
 
       $("#home").click(function(e) {
-        window.location.href = "http://ecsess.mcgilleus.ca";
-         /*e.preventDefault();
-       e.stopPropagation();
-         $("#home").navigate();*/
+         e.preventDefault();
+	     e.stopPropagation();
+         $("#home").navigate();
       });
 
        //CHILD MENU LINKS
        $("#officeHours").click(function(e) {
          e.preventDefault();
-       e.stopPropagation();
+	     e.stopPropagation();
          $("#officeHours").navigate();
       });
 
       $("#meetCouncil").click(function(e) {
          e.preventDefault();
-       e.stopPropagation();
+	     e.stopPropagation();
          $("#meetCouncil").navigate();
       });
 
       $("#officeHours").click(function(e) {
          e.preventDefault();
-       e.stopPropagation();
+	     e.stopPropagation();
          $("#officeHours").navigate();
       });
 
-      /*$("#archives").click(function(e) {
+      $("#archives").click(function(e) {
          e.preventDefault();
-       e.stopPropagation();
+	     e.stopPropagation();
          $("#archives").navigate();
-      });*/
+      });
 
       $("#codejam").click(function(e) {
          e.preventDefault();
-       e.stopPropagation();
+	     e.stopPropagation();
          $("#codejam").navigate();
       });
 
       $("#ottawa").click(function(e) {
          e.preventDefault();
-       e.stopPropagation();
+	     e.stopPropagation();
          $("#ottawa").navigate();
       });
 
       $("#coffeehouse").click(function(e) {
          e.preventDefault();
-       e.stopPropagation();
+	     e.stopPropagation();
          $("#coffeehouse").navigate();
       });
 
       $("#more").click(function(e) {
          e.preventDefault();
-       e.stopPropagation();
+	     e.stopPropagation();
          $("#more").navigate();
       });
 
@@ -441,44 +440,44 @@
 
        $("#officeHoursM").click(function(e) {
          e.preventDefault();
-       e.stopPropagation();
+	     e.stopPropagation();
          $("#officeHoursM").navigate();
       });
 
       $("#meetCouncilM").click(function(e)  {
          e.preventDefault();
-       e.stopPropagation();
+	     e.stopPropagation();
          $("#meetCouncilM").navigate();
       });
 
 
-      /*$("#archivesM").click(function(e) {
+      $("#archivesM").click(function(e) {
          e.preventDefault();
-       e.stopPropagation();
+	     e.stopPropagation();
          $("#archivesM").navigate();
-      });*/
+      });
 
       $("#codejamM").click(function(e) {
          e.preventDefault();
-       e.stopPropagation();
+	     e.stopPropagation();
          $("#codejamM").navigate();
       });
 
       $("#ottawaM").click(function(e) {
          e.preventDefault();
-       e.stopPropagation();
+	     e.stopPropagation();
          $("#ottawaM").navigate();
       });
 
       $("#coffeehouseM").click(function(e) {
          e.preventDefault();
-       e.stopPropagation();
+	     e.stopPropagation();
          $("#coffeehouseM").navigate();
       });
 
       $("#moreM").click(function(e) {
          e.preventDefault();
-       e.stopPropagation();
+	     e.stopPropagation();
          $("#moreM").navigate();
       });
 
